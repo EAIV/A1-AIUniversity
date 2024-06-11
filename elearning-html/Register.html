@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/Reg.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css" integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/fontawesome.min.css" integrity="sha512-t5T3Rc5ovESH1DDzUmPb7WDF91QvYVzP26HdUqABGy26RIiRRp5S4ygqEWDQbWmUqgMdUISpaESbM/iopIWHIg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+    <body>
+        <div class="registration">
+            <div class="container">
+                
+                    <div class="row">
+                            <div class="col-md-10 mx-auto">
+                        <div class="card reg_sec" style="background-color: aliceblue;">
+                                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Register
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><b><U>Register</U></b></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form method="post" action="url" enctype="multipart/form-data">
+                <div class="row">
+                    <!-- For Username -->
+                    <div class="col-md-6">
+                        <label><i class="fas fa-user text-primary mr-2"></i><span style="border-right: 2px solid #000;" class="mr-2"></span><b>Username</b><span class="text-danger">*</span>:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="username" placeholder="Enter Username" class="form-control" required=" ">
+                    </div>
+                    <!-- For Email -->
+                    <div class="col-md-6">
+                        <label><i class="fas fa-envelope text-primary mr-1"></i><span style="border-right: 2px solid #000;" class="mr-2"></span><b>Email:</b></label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="email" id="email" placeholder="Enter Email" class="form-control mt-2"/>
+                    </div>
+                    <!-- For Mobile no. -->
+                    <div class="col-md-6">
+                        <label><i class="fas fa-mobile-alt text-primary mr-2"></i><span style="border-right: 2px solid #000;" class="mr-2"></span><b>Mobile no.</b> <span class="text-danger">*</span>:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" name="mobile" id="mobile" placeholder="+91" class="form-control mt-2"/>
+                    </div>
+                    <!-- For Password -->
+                    <div class="col-md-6">
+                        <label><i class="fas fa-unlock-alt text-primary mr-2"></i><span style="border-right: 2px solid #000;" class="mr-2"></span><b>Password</b> <span class="text-danger">*</span>:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" name="password" id="password" placeholder="Enter Password" class="form-control mt-2"/>
+                    </div>
+                    <!-- For Gender -->
+                    <div class="col-md-6">
+                        <label><i class="fas fa-user-tag text-primary mr-1"></i><span style="border-right: 2px solid #000;" class="mr-2"></span><b>Gender:</b> <span class="text-danger">*</span>:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="radio" value="Male" name="gender" mt-1/> Male
+                        <input type="radio" value="Female" name="gender" mt-1/> Female
+                        <input type="radio" value="Others" name="gender" mt-1/> Others
+                    </div>
+                    <!-- For course -->
+                    <div class="col-md-6">
+                        <label><i class="fas fa-book text-primary mr-2"></i><span style="border-right: 2px solid #000;" class="mr-2"></span><b>Course:</b> <span class="text-danger">*</span>:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="checkbox"value="Diploma"name="course" mt-1/> Diploma
+                        <input type="checkbox"value="B.Tech"name="course" mt-1/> B.Tech
+                        <input type="checkbox"value="BBA"name="course"   mt-1/> BBA
+                        <input type="checkbox"value="BCA"name="course"  mt-1/> BCA
+                        <input type="checkbox"value="M.Tech"name="course"  mt-1/> M.Tech
+                    </div>
+                    <!-- For Country -->
+                    <div class="col-md-6">
+                        <label><i class="fas fa-globe-asia text-primary mr-2"></i><span style="border-right: 2px solid #000;" class="mr-2"></span><b>Country:</b> <span class="text-danger">*</span>:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <select name="country" class="form-control">
+                            <option value="">select country</option>
+                            <option value="India">India</option>
+                            <option value="America">America</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="China">China</option>
+                            <option value="Newzealand">Newzealand</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Japan">Japan</option>
+                        </select>
+                    </div>
+                    <!-- For Document -->
+                    <div class="col-md-6">
+                        <label><i class="fas fa-folder-open text-primary mr-1"></i><span style="border-right: 2px solid #000;" class="mr-2"></span><b>Document:</b> <span class="text-danger">*</span>:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="file" name="Document" class="form-control mt-1"/>
+                    </div>
+                    <!-- For DOB -->
+                    <div class="col-md-6">
+                        <label><i class="fas fa-calendar-alt text-primary mr-2"></i><span style="border-right: 2px solid #000;" class="mr-2"></span><b>DOB:</b> <span class="text-danger">*</span>:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="date" min="1995-01-01" name="DOB" max="2023-05-30" class="form-control mt-1"/>
+                    </div>
+                    <!-- For Time -->
+                    <div class="col-md-6">
+                        <label><i class="fas fa-clock text-primary mr-2"></i><span style="border-right: 2px solid #000;" class="mr-2"></span><b>Time:</b> <span class="text-danger">*</span>:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="time" step="2" name="time" class="form-control mt-1"/>
+                    </div>
+                    <!-- For Address -->
+                    <div class="col-md-6">
+                        <label><i class="fas fa-address-card text-primary mr-2"></i><span style="border-right: 2px solid #000;" class="mr-2"></span><b>Address:</b> <span class="text-danger">*</span>:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <textarea name="Address" rows="4" cols="40" class="form-control mt-1"></textarea>
+                    </div>
+                    <div class="input-name">
+                        <center>
+                        <input type="checkbox"class="check-button">
+                        <label>I accept the terms and conditions:</label>
+                        </center>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" value="submit" name="submit" class="btn-info mr-2">Submit</button>
+                    <button type="reset" value="reset" name="reset" class="btn-info">Reset</button>
+                    </div>
+                </div>
+            </form> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                                
+                            </div>
+                        </div>
+                  </div>    
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    </body>
+</html>
