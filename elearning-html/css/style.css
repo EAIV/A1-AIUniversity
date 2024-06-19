@@ -126,6 +126,22 @@
     transition: .5s;
 }
 
+.text-primary{
+    font-size: 3vw;
+    margin-left: 0px;
+}
+
+.text-primary img{
+    width: 75px;
+}
+
+@media (max-width:600px){
+    .text-primary{
+        font-size: 6vw;
+        width: 2vw;
+    }
+}
+
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
         display: block;
